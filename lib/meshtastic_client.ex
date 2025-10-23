@@ -109,7 +109,6 @@ defmodule MeshtasticClient do
   ## Example
 
       MeshtasticClient.subscribe(conn)
-      MeshtasticClient.get_node_info(conn)
 
       # Then receive messages
       receive do
@@ -134,7 +133,6 @@ defmodule MeshtasticClient do
   ## Example
 
       MeshtasticClient.subscribe(conn)
-      MeshtasticClient.get_config(conn)
       messages = MeshtasticClient.collect_messages(timeout: 3000)
   """
   @spec collect_messages(keyword()) :: [term()]

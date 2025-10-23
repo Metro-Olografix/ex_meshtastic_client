@@ -1,4 +1,4 @@
-# Meshtastic Client
+# Meshtastic Client (WIP)
 
 Elixir client for Meshtastic devices. Connects over TCP to send and receive mesh network messages using Protobuf.
 
@@ -34,6 +34,9 @@ IO.inspect(messages)
 ```
 
 See the `examples/` directory for more usage patterns.
+
+> [!NOTE]
+> Protobuf client is generated automatically but not all features are available on the Elixir client
 
 ## Setup
 

@@ -10,13 +10,6 @@ defmodule ReceiveMessages do
     {:ok, conn} = MeshtasticClient.connect(type: :tcp, host: device_ip)
     IO.puts("Connected to #{device_ip}\n")
 
-    # Subscribe to receive messages
-    MeshtasticClient.subscribe(conn)
-
-    # Request device config to trigger responses
-    IO.puts("Requesting device configuration...")
-    MeshtasticClient.get_config(conn)
-
     conn
   end
 
@@ -62,6 +55,9 @@ defmodule ReceiveMessages do
   end
 
   defp stream_messages(conn) do
+    # Subscribe to receive messages
+    MeshtasticClient.subscribe(conn)
+
     receive do
       {:meshtastic_message, msg} ->
         case msg.payload_variant do
