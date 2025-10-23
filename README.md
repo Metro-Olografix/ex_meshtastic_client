@@ -1,5 +1,8 @@
 # Meshtastic Client (WIP)
 
+![Hex.pm Version](https://img.shields.io/hexpm/v/meshtastic_client)
+![Hex.pm Docs](https://img.shields.io/hexpm/v/meshtastic_client?label=hexdocs&link=https%3A%2F%2Fhexdocs.pm%2Fmeshtastic_client%2Fapi-reference.html)
+
 Elixir client for Meshtastic devices. Connects over TCP to send and receive mesh network messages using Protobuf.
 
 ## Installation
