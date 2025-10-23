@@ -25,9 +25,6 @@ meshtastic_client-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 
-# Generated protobuf files
-/lib/meshtastic/proto/
-
 # IDE
 /.idea/
 /.vscode/
